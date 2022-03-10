@@ -1,0 +1,47 @@
+2022-02-21T04:45:11+00:00 CRITICAL syntax error, unexpected 'of' (T_STRING), expecting ')' in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\home-template.php on line 50
+
+2022-02-21T05:38:37+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on string in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\single-product.php:25
+Stack trace:
+#0 C:\xampp\htdocs\roserabbit\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\roserabbit\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\roserabbit\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\single-product.php on line 25
+
+2022-02-21T05:39:22+00:00 CRITICAL Uncaught Error: Call to a member function ID() on string in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\single-product.php:25
+Stack trace:
+#0 C:\xampp\htdocs\roserabbit\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\roserabbit\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\roserabbit\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\single-product.php on line 25
+
+2022-02-21T06:00:53+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_field() in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\home-template.php:92
+Stack trace:
+#0 C:\xampp\htdocs\roserabbit\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\roserabbit\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\roserabbit\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\home-template.php on line 92
+
+2022-02-21T06:01:43+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_field() in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\home-template.php:92
+Stack trace:
+#0 C:\xampp\htdocs\roserabbit\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\roserabbit\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\roserabbit\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\home-template.php on line 92
+
+2022-02-21T06:26:46+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\xampp\htdocs\roserabbit\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:25
+Stack trace:
+#0 C:\xampp\htdocs\roserabbit\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\roserabbit\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1656): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\roserabbit\wp-includes\class-wp-hook.php(307): woocommerce_show_product_sale_flash('')
+#3 C:\xampp\htdocs\roserabbit\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\roserabbit\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\content-product.php(84): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\roserabbit\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\roserabbit\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284 in C:\xampp\htdocs\roserabbit\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php on line 25
+
+2022-02-21T08:52:40+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\home-template.php on line 499
+

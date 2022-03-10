@@ -1,0 +1,4 @@
+2022-02-22T05:46:17+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\author.php on line 75
+
+2022-02-22T08:56:12+00:00 CRITICAL syntax error, unexpected '?>' in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\content-product-single.php on line 94
+

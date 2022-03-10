@@ -1,0 +1,92 @@
+2022-02-18T09:29:18+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\roserabbit/wp-content/themes/roserabbitwp-bootstrap-navwalker.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\functions.php on line 148
+
+2022-02-18T09:29:18+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\roserabbit/wp-content/themes/roserabbitwp-bootstrap-navwalker.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\functions.php on line 148
+
+2022-02-18T09:29:18+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\roserabbit/wp-content/themes/roserabbitwp-bootstrap-navwalker.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\functions.php on line 148
+
+2022-02-18T09:29:18+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\roserabbit/wp-content/themes/roserabbitwp-bootstrap-navwalker.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\functions.php on line 148
+
+2022-02-18T09:49:36+00:00 CRITICAL syntax error, unexpected ';' in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\wp-bootstrap-navwalker.php on line 124
+
+2022-02-18T09:49:37+00:00 CRITICAL syntax error, unexpected ';' in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\wp-bootstrap-navwalker.php on line 124
+
+2022-02-18T09:49:37+00:00 CRITICAL syntax error, unexpected ';' in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\wp-bootstrap-navwalker.php on line 124
+
+2022-02-18T09:49:37+00:00 CRITICAL syntax error, unexpected ';' in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\wp-bootstrap-navwalker.php on line 124
+
+2022-02-18T09:49:37+00:00 CRITICAL syntax error, unexpected ';' in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\wp-bootstrap-navwalker.php on line 124
+
+2022-02-18T09:49:37+00:00 CRITICAL syntax error, unexpected ';' in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\wp-bootstrap-navwalker.php on line 124
+
+2022-02-18T11:17:59+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\home-template.php on line 201
+
+2022-02-18T11:22:36+00:00 CRITICAL syntax error, unexpected '?' in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\home-template.php on line 201
+
+2022-02-18T11:38:41+00:00 CRITICAL syntax error, unexpected '=', expecting ',' or ';' in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\home-template.php on line 225
+
+2022-02-18T11:39:03+00:00 CRITICAL syntax error, unexpected '.', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\home-template.php on line 225
+
+2022-02-18T12:00:46+00:00 CRITICAL syntax error, unexpected ''category__in'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\home-template.php on line 373
+
+2022-02-18T12:53:01+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on string in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\single-product.php:25
+Stack trace:
+#0 C:\xampp\htdocs\roserabbit\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\roserabbit\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\roserabbit\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\single-product.php on line 25
+
+2022-02-18T12:53:17+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on string in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\single-product.php:23
+Stack trace:
+#0 C:\xampp\htdocs\roserabbit\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\roserabbit\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\roserabbit\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\single-product.php on line 23
+
+2022-02-18T12:53:31+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on string in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\single-product.php:25
+Stack trace:
+#0 C:\xampp\htdocs\roserabbit\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\roserabbit\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\roserabbit\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\single-product.php on line 25
+
+2022-02-18T12:53:59+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on string in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\single-product.php:25
+Stack trace:
+#0 C:\xampp\htdocs\roserabbit\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\roserabbit\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\roserabbit\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\single-product.php on line 25
+
+2022-02-18T12:54:10+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on string in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\single-product.php:25
+Stack trace:
+#0 C:\xampp\htdocs\roserabbit\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\roserabbit\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\roserabbit\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\single-product.php on line 25
+
+2022-02-18T13:10:18+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on string in C:\xampp\htdocs\roserabbit\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:25
+Stack trace:
+#0 C:\xampp\htdocs\roserabbit\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\roserabbit\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1656): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\roserabbit\wp-includes\class-wp-hook.php(307): woocommerce_show_product_sale_flash('')
+#3 C:\xampp\htdocs\roserabbit\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\roserabbit\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\single-product.php(42): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\roserabbit\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\roserabbit\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs.. in C:\xampp\htdocs\roserabbit\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php on line 25
+
+2022-02-18T13:10:27+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on string in C:\xampp\htdocs\roserabbit\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:25
+Stack trace:
+#0 C:\xampp\htdocs\roserabbit\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\roserabbit\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1656): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\roserabbit\wp-includes\class-wp-hook.php(307): woocommerce_show_product_sale_flash('')
+#3 C:\xampp\htdocs\roserabbit\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\roserabbit\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\roserabbit\wp-content\themes\roserabbit\single-product.php(42): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\roserabbit\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\roserabbit\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs.. in C:\xampp\htdocs\roserabbit\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php on line 25
+
