@@ -1,0 +1,12 @@
+2022-03-11T05:16:03+00:00 CRITICAL Uncaught Error: Call to undefined function wp_is_block_theme() in /bitnami/wordpress/wp-content/plugins/wordpress-seo/admin/views/tabs/metas/general.php:14
+Stack trace:
+#0 /bitnami/wordpress/wp-content/plugins/wordpress-seo/admin/class-option-tabs-formatter.php(72): require()
+#1 /bitnami/wordpress/wp-content/plugins/wordpress-seo/admin/class-option-tabs.php(119): WPSEO_Option_Tabs_Formatter->run()
+#2 /bitnami/wordpress/wp-content/plugins/wordpress-seo/admin/pages/metas.php(25): WPSEO_Option_Tabs->display()
+#3 /bitnami/wordpress/wp-content/plugins/wordpress-seo/admin/menu/class-menu.php(80): require_once('/bitnami/wordpr...')
+#4 /bitnami/wordpress/wp-content/plugins/wordpress-seo/admin/menu/class-menu.php(63): WPSEO_Menu->show_page()
+#5 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(303): WPSEO_Menu->load_page()
+#6 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(327): WP_Hook->apply_filters()
+#7 /opt/bitnami/wordpress/wp-includes/plugin.php(470): WP_Hook->do_action()
+#8 /opt/bitnami/wordpress/wp-adm in /bitnami/wordpress/wp-content/plugins/wordpress-seo/admin/views/tabs/metas/general.php on line 14
+

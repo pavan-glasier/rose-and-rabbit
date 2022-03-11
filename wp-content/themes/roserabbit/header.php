@@ -21,14 +21,68 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
+<meta name="Robots" content="all"/>
+<meta name="Googlebot" content="index, follow"/>
+<meta name="Yahoobot" content="index, follow"/>
+<meta name="MSNbot" content="index, follow"/>
+<meta name="allow-search" content="yes"/>
+<meta name="rating" content="General"/>
+<meta name="document-distribution" content="Global"/>
+<meta name="language" content="EN">
+<meta name="author" content="Rose and Rabbit"/>
+<meta name="copyright" content="roseandrabbit.com"/>
+<meta name="replyto" content="info.roserabbit@gmail.com"/>
+<meta name="geo.country" content="India">
+<meta name="document-type" content="Public">
+<meta name="document-rating" content="Safe for Kids"/>
+	
+<!---- Twitter Card Meta Tag ----->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@roseandrabbit" />
+<meta name="twitter:creator" content="@roseandrabbit" />
+<meta name="twitter:title" content="Buy Facewash for Oily Skin - Dry Skin | Creamy Facial Wash" />
+<meta name="twitter:description" content="Buy the best facewash for removing oil and dry skin. Its unique formula solidifies your face oil, making it easier to remove blackheads and other impurities." />
+<meta name="twitter:image" content="https://www.roseandrabbit.com/assets/images/main-logo.png"/>
+<!---- Twitter Card Meta Tag ----->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2614278488880971');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2614278488880971&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+	
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="https://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php echo esc_url( get_bloginfo( 'pingback_url' ) ); ?>">
+	<link rel='shortcut icon' type='image/x-icon' href="<?php echo site_url();?>/wp-content/uploads/2022/02/favicon.png" />
 <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js?ver=3.7.0" type="text/javascript"></script>
 <![endif]-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css' media='all' />
+	<link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/assets/css/swiper-bundle.min.css' media='all' />
+	<link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/assets/css/owl.carousel.min.css' media='all' />
+	<link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/assets/css/owl.theme.min.css' media='all' />
+	<link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/assets/css/owl.transitions.css' media='all' />
+	<link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/assets/css/style.css' media='all' />
+	
+	<link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/assets/css/responsive.css' media='all' />
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap' media='all' />
+	<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' media='all' />
+	
 <?php wp_head(); ?>
 </head>
 
@@ -62,64 +116,6 @@
 
 
 <header class="header">
-    <div class="container" style="display: none;">
-        <div class="header__wrapper">
-            <div class="header__logo">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                	<?php $main_logo = get_field('main_logo', 'option'); ?>
-                	<?php if($main_logo): ?>
-                    <img src="<?php echo $main_logo;?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/>
-                	<?php else: ?>
-                	<img src="<?php echo get_template_directory_uri();?>/assets/images/main-logo.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/>
-                	<?php endif; ?>
-                    
-                </a>
-            </div>
-            <div class="header__nav">
-                <ul class="header__nav-primary">
-                	<?php $social_media = get_field('social_media', 'option'); 
-                	?>
-                	
-                	<?php if( have_rows('social_media', 'option') ): ?>
-            		<?php while( have_rows('social_media', 'option') ): the_row(); 
-
-        	        // Get sub field values.
-        	        	$facebook = get_sub_field('facebook');
-        	        	$twitter = get_sub_field('twitter');
-        	        	$instagram = get_sub_field('instagram');
-        	        	$pinterest = get_sub_field('pinterest');
-
-        			    $facebook_target = $facebook['target'] ? $facebook['target'] : '_self';
-        			    $twitter_target = $twitter['target'] ? $twitter['target'] : '_self';
-        			    $instagram_target = $instagram['target'] ? $instagram['target'] : '_self';
-        			    $pinterest_target = $pinterest['target'] ? $pinterest['target'] : '_self';
-        	        	?>
-        	        	<li>
-        					<a href="<?php echo esc_url($facebook['url']); ?>" target="<?php echo esc_attr( $facebook_target ); ?>">
-        						<i class="fa fa-facebook-official"></i>
-        					</a>
-        				</li>
-        	            <li>
-        	            	<a href="<?php echo esc_url($twitter['url']); ?>" target="<?php echo esc_attr( $twitter_target ); ?>">
-        	            		<i class="fa fa-twitter"></i>
-        	            	</a>
-        	            </li>
-        	            <li>
-        	            	<a href="<?php echo esc_url($instagram['url']); ?>" target="<?php echo esc_attr( $instagram_target ); ?>">
-        	            		<i class="fa fa-linkedin-square"></i>
-        	            	</a>
-        	            </li>
-        	            <li>
-        	            	<a href="<?php echo esc_url($pinterest['url']); ?>" target="<?php echo esc_attr( $pinterest_target ); ?>">
-        	            		<i class="fa fa-pinterest"></i>
-        	            	</a>
-        	            </li>
-        	        <?php endwhile; ?>
-        		<?php endif; ?>
-                </ul>
-            </div>
-        </div>
-    </div>
     <nav class="nav">
         <div class="container">
             <div class="dis-flex">
@@ -163,12 +159,69 @@
                         $cart_count = WC()->cart->cart_contents_count;
                         ?>
                         <a href="<?php echo esc_url($cart_url); ?>" class="cart-item" data-count="<?php echo $cart_count;?>"> 
-                        <span class="material-icons">shopping_basket</span> 
+                            <span class="material-icons">shopping_basket</span> 
                         </a>
         	           
                     </div>
                 </div>
             </div>
         </div>
-    </nav>
+	</nav>
+		<div class="mobile-menu">
+			<div class="site-logo">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+					<?php $sticky_logo = get_field('sticky_logo', 'option'); ?>
+					<?php if($sticky_logo): ?>
+					<img src="<?php echo $sticky_logo;?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/>
+					<?php else: ?>
+					<img src="<?php echo get_template_directory_uri();?>/assets/images/main-logo.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/>
+					<?php endif; ?>
+				</a>
+			</div>
+
+			<div class="mobile-nav-menu">
+				<button class="toggle-btn">
+					<span class="material-icons" style="font-size: 30px;">subject</span>
+				</button>
+				
+				<div class="menu">
+					<button class="close-btn">
+						<span class="material-icons">clear</span>
+					</button>
+						<?php
+                        wp_nav_menu(
+                            array(
+                                'theme_location'    => 'primary',
+                                'container'         => 'ul',
+                                'menu_class'         => 'nav-ul'
+                            )
+                        );
+                        ?>
+
+                    <div class="menu-bottom">
+                        <?php 
+                        $login_button = get_field('login_button', 'option');
+                        $checkout_button = get_field('checkout_button', 'option');
+                        $login_target = $login_button['target'] ? $login_button['target'] : '_self';
+                        $checkout_target = $checkout_button['target'] ? $checkout_button['target'] : '_self';
+                        ?>
+                        <?php if($login_button): ?>
+                        <a href="<?php echo esc_url($login_button['url']); ?>" class="account" target="<?php echo esc_attr( $login_target ); ?>"> <span class="material-icons">person_outline</span> </a>
+                        <?php endif; ?>
+                        
+
+                        <?php 
+                        $cart_url = wc_get_cart_url();
+                        $cart_count = WC()->cart->cart_contents_count;
+                        ?>
+                        <a href="<?php echo esc_url($cart_url); ?>" class="cart-item" data-count="<?php echo $cart_count;?>"> 
+                            <span class="material-icons">shopping_basket</span> 
+                        </a>
+                    </div>
+				</div>
+
+
+			</div>
+		</div>
+ 
 </header>

@@ -28,6 +28,8 @@ if ( ! apply_filters( 'woocommerce_order_item_visible', true, $item ) ) {
 	<td class="woocommerce-table__product-name product-name">
 		<?php
 		$is_visible        = $product && $product->is_visible();
+		
+		
 		$product_permalink = apply_filters( 'woocommerce_order_item_permalink', $is_visible ? $product->get_permalink( $item ) : '', $item, $order );
 
 		echo wp_kses_post( apply_filters( 'woocommerce_order_item_name', $product_permalink ? sprintf( '<a href="%s">%s</a>', $product_permalink, $item->get_name() ) : $item->get_name(), $item, $is_visible ) );
@@ -41,7 +43,7 @@ if ( ! apply_filters( 'woocommerce_order_item_visible', true, $item ) ) {
 			$qty_display = esc_html( $qty );
 		}
 
-		echo apply_filters( 'woocommerce_order_item_quantity_html', ' <strong class="product-quantity">' . sprintf( '&times;&nbsp;%s', $qty_display ) . '</strong>', $item ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		echo apply_filters( 'woocommerce_order_item_quantity_html', ' <strong class="quantity-count">(' . $product->price . sprintf( '&times;&nbsp;%s', $qty_display ) . ')</strong>', $item ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 		do_action( 'woocommerce_order_item_meta_start', $item_id, $item, $order, false );
 

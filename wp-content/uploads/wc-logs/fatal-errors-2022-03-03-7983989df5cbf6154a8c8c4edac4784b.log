@@ -1,0 +1,18 @@
+2022-03-03T06:54:39+00:00 CRITICAL syntax error, unexpected '>', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /home/glasiuv4/public_html/glasier.in/roserabbit/wp-content/themes/roserabbit/home-template.php on line 607
+
+2022-03-03T06:55:36+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /home/glasiuv4/public_html/glasier.in/roserabbit/wp-content/themes/roserabbit/home-template.php on line 625
+
+2022-03-03T08:55:23+00:00 CRITICAL syntax error, unexpected '?>' in /home/glasiuv4/public_html/glasier.in/roserabbit/wp-content/themes/roserabbit/home-template.php on line 872
+
+2022-03-03T12:20:09+00:00 CRITICAL Uncaught Error: Call to undefined function open_body() in /home/glasiuv4/public_html/glasier.in/roserabbit/wp-content/themes/roserabbit/header-home.php:214
+Stack trace:
+#0 /home/glasiuv4/public_html/glasier.in/roserabbit/wp-includes/template.php(770): require_once()
+#1 /home/glasiuv4/public_html/glasier.in/roserabbit/wp-includes/template.php(716): load_template('/home/glasiuv4/...', true, Array)
+#2 /home/glasiuv4/public_html/glasier.in/roserabbit/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /home/glasiuv4/public_html/glasier.in/roserabbit/wp-content/themes/roserabbit/home-template.php(8): get_header('home')
+#4 /home/glasiuv4/public_html/glasier.in/roserabbit/wp-includes/template-loader.php(106): include('/home/glasiuv4/...')
+#5 /home/glasiuv4/public_html/glasier.in/roserabbit/wp-blog-header.php(19): require_once('/home/glasiuv4/...')
+#6 /home/glasiuv4/public_html/glasier.in/roserabbit/index.php(17): require('/home/glasiuv4/...')
+#7 {main}
+  thrown in /home/glasiuv4/public_html/glasier.in/roserabbit/wp-content/themes/roserabbit/header-home.php on line 214
+

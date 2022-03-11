@@ -93,7 +93,13 @@
             </footer>
 
 <?php wp_footer(); ?>
-
+<script src='<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.4.1.min.js' ></script>
+<script src='<?php echo get_template_directory_uri(); ?>/assets/js/popper.min.js' ></script>
+<script src='<?php echo get_template_directory_uri(); ?>/assets/js/popper.min.js' ></script>
+<script src='<?php echo get_template_directory_uri(); ?>/assets/js/bootstrap.min.js' ></script>
+<script src='<?php echo get_template_directory_uri(); ?>/assets/js/owl.carousel.min.js' ></script>
+<script src='<?php echo get_template_directory_uri(); ?>/assets/js/swiper-bundle.min.js' ></script>
+<script src='<?php echo get_template_directory_uri(); ?>/assets/js/script.js' ></script>
 
 <script>
     $(window).on('load', function () {
@@ -129,6 +135,34 @@
     });
 </script>
 <script>
+$( document ).ready(function() {
+    var $body = $(document.body);
+    var _SCROLL_FIXED_CUTOFF = _SCROLL_FIXED_CUTOFF || ($(window).height() >= 825 ? 300 : 75),
+      _HEADER_HEIGHT = _HEADER_HEIGHT || 825;
+    
+    $(window).scroll(function(e) {
+      if ($('header.header[data-no-scroll]').length)
+        return;
+		  if (this.pageYOffset >= _SCROLL_FIXED_CUTOFF && !$body.hasClass('scrolled')) {
+			$body.addClass('scrolled');
+			$(".mobile-menu").addClass("scroll");
+			  $('.mobile-menu').slideDown();
+		  } else if (this.pageYOffset < _SCROLL_FIXED_CUTOFF && $body.hasClass('scrolled')) {
+			$body.removeClass('scrolled');
+			$(".mobile-menu").removeClass("scroll");
+			  $('.mobile-menu').slideUp();
+		  }
+		  if (this.pageYOffset >= _HEADER_HEIGHT) {
+			_header_carousel_active = false;
+		  } else {
+			_header_carousel_active = true;
+		  }
+    });
+});
+	
+	
+</script>
+<script>
     $(document).ready(function () {
       $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -145,37 +179,78 @@
     
 </script>
 <script>
-//    $(document).ready(function(){
-//       $('#login-btn').click(function(){   
-//       $("#login").toggle();  
-//       $("#register").hide(1000);   
-//   });
-//   $('#register-btn').click(function(){   
-//       $("#register").toggle() ; 
-//       $("#login").hide(1000);   
-//   });
 
-//   $('#forgot-password').click(function(){   
-//       $("#forgot-pass").toggle();   
-//       $("#login").hide(1000);   
-//   });
+$(function() {
+    $('#account_first_name, #account_last_name, #account_display_name, #billing_first_name, #billing_last_name, #billing_company, #shipping_first_name, #shipping_last_name, #shipping_company, #billing_city, #calc_shipping_city, #name, #subject').keydown(function(e) {
+        var key = e.keyCode;
+        if (key >= 48 && key <= 57) {
+            e.preventDefault();
+        }
+    });
+  });
+</script>
+<script>
 
-//   $('#back-login').click(function(){   
-//       $("#login").toggle();   
-//       $("#forgot-pass").hide(1000);   
-//   });
-// });
+$(function() {
+    $('#account_first_name, #account_last_name, #account_display_name, #billing_first_name, #billing_last_name, #billing_company, #billing_address_1, #billing_address_2, #shipping_first_name, #shipping_last_name, #shipping_company, #shipping_address_1, #shipping_address_2, #billing_city, #calc_shipping_city, #billing_email, #email, #name, #subject').keydown(function(e) {
+        if( e.which === 32 && this.value === '' ) {
+            e.preventDefault();
+          return false;
+        }
+    });
+  });
+</script>
+<script>
+
+$(document).ready(function () {
+    $("#billing_postcode, #billing_phone, #shipping_postcode, #calc_shipping_postcode, #phone").keypress(function (e) {
+        var key = e.charCode || e.keyCode || 0;
+        // only numbers
+        if (key < 48 || key > 58) {
+            e.preventDefault();
+            return false;
+        }
+    });
+});
+
  </script>
 <script>
-//   $("#billing").show();
-//   $(".check-bill").click(function() {
-//     $("#billing").toggle(1000);
-//   });
+$('#billing_postcode, #shipping_postcode, #calc_shipping_postcode').on('keyup keypress', function(e){
+    if($(this).val().length > 6){
+        $(this).parent().attr("data-error", "Please Enter Only 6 Digit Pincode!");
+        e.preventDefault();
+        return false;
+    }
+    else if($(this).val().length <= 6){
+        $(this).parent().removeAttr("data-error");
+    }
+});
+</script>
+ 
+<script>
 
-// $(".bottom-box").hide();
-//   $("#submit-btn").click(function() {
-//     $(".bottom-box").toggle(1000);
-//   });
+$('#billing_phone, #phone').on('keyup keypress', function(e){
+    
+    if($(this).val().length > 10){
+        $(this).parent().attr("data-error", "Please Enter Only 10 Digit Number!");
+        e.preventDefault();
+        return false;
+    }
+    else if($(this).val().length <= 10){
+        $(this).parent().removeAttr("data-error");
+    }
+
+});
+ </script>
+<script>
+$(document).ready(function(){
+  $('.toggle-btn').click(function(){   
+      $(".menu").addClass('open');    
+  });
+	$('.close-btn').click(function(){   
+      $(".menu").removeClass('open');    
+  });
+});
 </script>
 <script>
 // $(document).ready(function(){

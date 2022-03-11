@@ -57,7 +57,7 @@ $col    = 1;
 		$oldcol  = $oldcol * -1;
 	?>
 
-	<div class="u-column6 col-6 woocommerce-Address">
+	<div class="u-column6 col-md-6 col-sm-12 woocommerce-Address">
 		<header class="woocommerce-Address-title ">
 			<h1><?php echo esc_html( $address_title ); ?></h1>
 			<a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', $name ) ); ?>" class="edit"><?php echo $address ? esc_html__( 'Edit', 'woocommerce' ) : esc_html__( 'Add', 'woocommerce' ); ?></a>

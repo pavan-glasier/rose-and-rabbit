@@ -309,7 +309,7 @@
 		width: 100%;
 		height: 55.6rem;
 		position: relative;
-		margin-bottom: 10rem
+		margin-bottom: 0rem
 	}
 	.detail__bg__wrapper {
 		position: absolute;
@@ -759,6 +759,7 @@
 	.detail .quantity-counter {
 		margin-left: 2.2rem;
 		margin-bottom: 30px;
+		float: left;
 	}
 	.detail .quantity .button {
 		margin-left: 11px;
